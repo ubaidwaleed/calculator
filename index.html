@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculator</title>
+    
+    <script src="./custom-adv.js" defer></script>
+   
+</head>
+<body>
+
+<center> 
+    <div class="box">
+        <input type="text" id="input1" placeholder="First number" readonly>
+        </br>
+        </br>
+        <input type="text" id="input2" placeholder="Second number" readonly>
+        </br>
+
+
+        </br>
+        
+            <table id="calcu">
+                <tr>
+                    <td>
+                    <button class="button" id="one" value="1" onclick="populateValue(1)">1 </button></td>
+                    <td><button class="button" id="two" value="2" onclick="populateValue(2)">2 </button></td>
+                    <td><button class="button" id="three" value="3" onclick="populateValue(3)"> 3</button></td>
+                    <td><button class="button" id="reset" onclick="reset()" >C</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" id="four" value="4" onclick="populateValue(4)"> 4</button></td>
+                    <td><button class="button" id="five" value="5" onclick="populateValue(5)"> 5</button></td>
+                    <td><button class="button" id="six" value="6" onclick="populateValue(6)"> 6</button></td>
+                        <td><button class="button" id="btn-minus" onclick="populateExp('-')" >-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" id="seven" value="7" onclick="populateValue(7)"> 7</button></td>
+                    <td><button class="button" id="eight" value="8" onclick="populateValue(8)"> 8</button></td>
+                    <td><button class="button" id="nine" value="9" onclick="populateValue(9)"> 9</button></td>
+                    <td><button class="button" id="btn-divide" value="/" onclick="populateExp('/')"> /</button></td>
+                        
+                </tr>
+                <tr>
+                
+                    <td><button class="button" id="zero" value="0" onclick="populateValue(0)"> 0</button></td>
+                    <td><button class="button"  id="btn-mutiply" value="*" onclick="populateExp('*')">*</button> </td>
+                    <td><button class="button" onclick="populateExp('+')" >+</button></td>
+                    <td><button class="button" id="btn-calculate" value="="  onclick="calculate()"> =</button></td>
+                    
+                </tr>
+                
+            </table>
+
+
+        </br>
+        </br>
+        <div id="result"></div>
+     </br>
+     </br>
+
+    </div>
+
+
+</center>
+  
+
+</body>
+</html>
